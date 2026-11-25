@@ -36,7 +36,7 @@ ${altHref ? `<link rel="alternate" hreflang="${l === "ar" ? "en" : "ar"}" href="
 <link rel="icon" type="image/png" href="${up}favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap"><link rel="stylesheet" href="${up}style.css"></head><body>`;
 
 const topbar = (l, up, altHref) =>
-  `<div class="topbar"><a class="brand" href="${up}${home(l)}"><img class="logo" src="${up}logo.png" alt="" width="40" height="40"><span>${esc(site.name[l])}</span></a><a class="lang" href="${altHref}" hreflang="${l === "ar" ? "en" : "ar"}" lang="${l === "ar" ? "en" : "ar"}">${UI[l].switchTo}</a></div>`;
+  `<div class="topbar"><a class="brand" href="${up}${home(l)}"><img class="logo" src="${up}logo.png" alt="" width="40" height="40"><span>${esc(site.name[l])}</span></a><a class="lang" onclick="try{localStorage.setItem('lang','${l === "ar" ? "en" : "ar"}')}catch(e){}" href="${altHref}" hreflang="${l === "ar" ? "en" : "ar"}" lang="${l === "ar" ? "en" : "ar"}">${UI[l].switchTo}</a></div>`;
 
 const socLinks = () =>
   [["LinkedIn", site.linkedin_page], ["X", site.x], ["TikTok", site.tiktok]].filter(([, u]) => u);
@@ -82,7 +82,10 @@ function indexPage(l) {
     .map((m) => `<a class="member" href="${m.slug}/index.html">${avatar(m, l, up)}<div><b>${esc(full(m, l))}</b><div class="role">${esc(m.role[l])}</div></div></a>`)
     .join("");
   const soc = socLinks();
-  return `${head(l, site.title[l], site.tagline[l], up, alt)}
+  const first = l === "ar"
+    ? `<script>try{if(!localStorage.getItem("lang")){localStorage.setItem("lang","en");location.replace("en/index.html")}}catch(e){}</script>`
+    : "";
+  return `${head(l, site.title[l], site.tagline[l], up, alt).replace('<meta charset="utf-8">', '<meta charset="utf-8">' + first)}
 <div class="hero">${topbar(l, up, alt)}<div class="hero-text"><h1>${esc(site.title[l])}</h1><p>${esc(site.tagline[l])}</p></div></div>
 <div class="members">${cards}</div>
 ${soc.length ? `<div class="soc">${soc.map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>` : ""}
