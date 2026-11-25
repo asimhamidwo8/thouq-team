@@ -9,6 +9,6 @@ with sync_playwright() as p:
         slug = os.path.basename(f)[:-5]
         pg = b.new_page()
         pg.goto("file://" + f); pg.wait_for_timeout(800)
-        pg.pdf(path=os.path.join(root, "cv", f"{slug}-cv.pdf"), format="A4", margin={"top":"11mm","bottom":"11mm","left":"12mm","right":"12mm"}, print_background=True)
+        pg.pdf(path=os.path.join(root, "cv", f"{slug}-cv.pdf"), format="A4", margin={"top":"9mm","bottom":"9mm","left":"11mm","right":"11mm"}, print_background=True)
         print("pdf:", slug)
     b.close()

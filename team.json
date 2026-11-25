@@ -45,22 +45,30 @@
       "linkedin": "https://www.linkedin.com/in/asim-hamid-833182446",
       "cv": {
         "title": "Full-Stack Developer",
-        "summary": "Full-stack developer based in Riyadh. Backend developer on Thouq, a group restaurant-recommendation app and my Holberton capstone project. Background in cybersecurity and governance from government-sector work.",
+        "summary": "Full-stack developer with a background in cybersecurity and governance. Backend developer on Thouq, a group restaurant-recommendation app built as a Holberton capstone project, working with Python, FastAPI and PostgreSQL.",
         "projects": [
           {
-            "name": "Thouq (Holberton capstone, team project)",
-            "desc": "App that helps a group choose a restaurant: members enter preferences and the group votes on a shortlist. As backend developer I built phone-number login with SMS verification and JWT, a public restaurant listing API over 33,000 restaurants, and the SMS provider integration.",
-            "stack": "FastAPI, SQLAlchemy, PostgreSQL (Neon), Render"
+            "name": "Thouq",
+            "meta": "Backend Developer | Holberton capstone, team of 4 | 2026",
+            "desc": "App that helps a group choose a restaurant: members enter preferences, the app shortlists places, the group votes.",
+            "points": [
+              "Built the FastAPI backend: phone-number sign-in with SMS verification and JWT, account preferences, and joining an outing by invite code as a member or guest.",
+              "Implemented the recommendation engine (filtering, per-person scoring, group aggregation) and the plan, voting and result endpoints.",
+              "Added search and filters, saved restaurants, push notifications and concurrency tests; 30 reviewed pull requests merged; deployed on Render with Neon PostgreSQL."
+            ],
+            "stack": "Python, FastAPI, SQLAlchemy, PostgreSQL (Neon), Render, GitHub Actions"
           },
           {
             "name": "Wudhuh (wudhuh.com)",
-            "desc": "Arabic-first web app that sorts a person's thoughts into categories and urgency levels. Built and published it, including authentication, per-user storage with row-level security, and rate limiting.",
+            "meta": "Creator | Web application",
+            "desc": "Arabic-first web app that sorts a user's thoughts by category and urgency; authentication, row-level security, rate limiting.",
             "stack": "Next.js, TypeScript, Supabase, Upstash Redis, Vercel"
           },
           {
             "name": "Stocks Advisor",
-            "desc": "Question-answering system over a library of investing texts, built with retrieval-augmented generation (RAG): ingestion scripts, vector search, and answers grounded in the retrieved passages.",
-            "stack": "Node.js, PostgreSQL (pgvector), RAG"
+            "meta": "Creator | Retrieval-augmented generation",
+            "desc": "Question-answering over a library of investing texts: ingestion, vector search, answers grounded in retrieved passages.",
+            "stack": "Node.js, PostgreSQL (pgvector)"
           }
         ],
         "experience": [
@@ -70,7 +78,7 @@
             "period": "1442H - 1447H",
             "points": [
               "Audited administrative operations and government decisions.",
-              "Monitored the correct execution of the plan.",
+              "Monitored the execution of the plan to ensure it was carried out correctly.",
               "Responsible for site security."
             ]
           }
@@ -79,19 +87,19 @@
           {
             "title": "Software Engineering Program",
             "org": "Holberton School, via Tuwaiq Academy",
-            "period": "Feb 2026 - Dec 2026 (expected)",
+            "period": "Feb 2026 - Dec 2026",
             "note": ""
           },
           {
-            "title": "Diploma in Artificial Intelligence (final year)",
+            "title": "Diploma in Artificial Intelligence",
             "org": "Gulf Institute",
-            "period": "Sep 2025 - 2026 (expected)",
+            "period": "Sep 2025 - 2026",
             "note": ""
           },
           {
-            "title": "AI Specialization 2026-2027",
+            "title": "AI Specialization",
             "org": "KAUST Academy",
-            "period": "Accepted, online stage in progress",
+            "period": "2026 - 2027",
             "note": ""
           },
           {
@@ -119,7 +127,7 @@
             "date": "Sep 2025"
           }
         ],
-        "skills": "Python, FastAPI, SQLAlchemy, PostgreSQL, REST APIs, JWT authentication, TypeScript, Next.js, Supabase, RAG (pgvector), Linux (WSL), Git, GitHub, cybersecurity fundamentals, governance and auditing"
+        "skills": "Python, FastAPI, SQLAlchemy, PostgreSQL, REST APIs, JWT authentication, TypeScript, Next.js, Supabase, RAG (pgvector), Linux (WSL), Git, GitHub Actions, cybersecurity fundamentals, governance and auditing"
       }
     },
     {

@@ -106,10 +106,10 @@ function cvDocPage(m) {
   ].filter(Boolean).map(esc).join(" | ");
   const parts = [];
   parts.push(sec("Summary", `<p>${esc(cv.summary)}</p>`));
-  parts.push(sec("Projects", cv.projects.map((p) => `<div class="item"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><p class="tech">Technologies: ${esc(p.stack)}</p></div>`).join("")));
+  parts.push(sec("Projects", cv.projects.map((p) => `<div class="item"><h3>${esc(p.name)}</h3>${p.meta ? `<p class="meta">${esc(p.meta)}</p>` : ""}<p>${esc(p.desc)}</p>${p.points ? `<ul>${p.points.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}<p class="tech">Technologies: ${esc(p.stack)}</p></div>`).join("")));
   parts.push(sec("Experience", cv.experience.map((e) => `<div class="item"><h3>${esc(e.title)}</h3><p class="meta">${esc(e.org)} | ${esc(e.period)}</p><ul>${e.points.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")));
   parts.push(sec("Education", cv.education.map((e) => `<div class="item"><h3>${esc(e.title)}</h3><p class="meta">${esc(e.org)}${e.period ? " | " + esc(e.period) : ""}${e.note ? " | " + esc(e.note) : ""}</p></div>`).join("")));
-  parts.push(sec("Certifications", `<ul>${cv.certs.map((c) => `<li>${esc(c.name)} (${esc(c.date)})</li>`).join("")}</ul>`));
+  parts.push(sec("Certifications", `<ul class="certs">${cv.certs.map((c) => `<li>${esc(c.name)} (${esc(c.date)})</li>`).join("")}</ul>`));
   parts.push(sec("Skills", `<p>${esc(cv.skills)}</p>`));
   return `<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>${esc(full(m, "en"))} - CV</title>
 <link rel="stylesheet" href="../cv.css"></head><body>
