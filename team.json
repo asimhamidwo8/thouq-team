@@ -1,0 +1,154 @@
+{
+  "site": {
+    "name": {
+      "ar": "ذوق",
+      "en": "Thouq"
+    },
+    "tagline": {
+      "ar": "ذوق يدلّك",
+      "en": "Thouq guides you"
+    },
+    "title": {
+      "ar": "فريق ذوق",
+      "en": "Thouq Team"
+    },
+    "linkedin_page": "",
+    "x": "",
+    "tiktok": ""
+  },
+  "team": [
+    {
+      "slug": "asim",
+      "first": {
+        "ar": "عاصم",
+        "en": "Asim"
+      },
+      "last": {
+        "ar": "حامد",
+        "en": "Hamid"
+      },
+      "initial": {
+        "ar": "ع",
+        "en": "A"
+      },
+      "role": {
+        "ar": "مطوّر باك اند",
+        "en": "Backend Developer"
+      },
+      "location": {
+        "ar": "الرياض، السعودية",
+        "en": "Riyadh, Saudi Arabia"
+      },
+      "email": "asimhamidwo8@gmail.com",
+      "phone": "+966554084213",
+      "github": "asimhamidwo8",
+      "linkedin": "https://www.linkedin.com/in/asim-hamid-833182446",
+      "cv": {
+        "title": "Full-Stack Developer",
+        "summary": "Full-stack developer based in Riyadh. Backend developer on Thouq, a group restaurant-recommendation app and my Holberton capstone project. Background in cybersecurity and governance from government-sector work.",
+        "projects": [
+          {
+            "name": "Thouq (Holberton capstone, team project)",
+            "desc": "App that helps a group choose a restaurant: members enter preferences and the group votes on a shortlist. As backend developer I built phone-number login with SMS verification and JWT, a public restaurant listing API over 33,000 restaurants, and the SMS provider integration.",
+            "stack": "FastAPI, SQLAlchemy, PostgreSQL (Neon), Render"
+          },
+          {
+            "name": "Wudhuh (wudhuh.com)",
+            "desc": "Arabic-first web app that sorts a person's thoughts into categories and urgency levels. Built and published it, including authentication, per-user storage with row-level security, and rate limiting.",
+            "stack": "Next.js, TypeScript, Supabase, Upstash Redis, Vercel"
+          },
+          {
+            "name": "Stocks Advisor",
+            "desc": "Question-answering system over a library of investing texts, built with retrieval-augmented generation (RAG): ingestion scripts, vector search, and answers grounded in the retrieved passages.",
+            "stack": "Node.js, PostgreSQL (pgvector), RAG"
+          }
+        ],
+        "experience": [
+          {
+            "title": "Governance and Security, Government Sector",
+            "org": "Government agency, Saudi Arabia",
+            "period": "1442H - 1447H",
+            "points": [
+              "Audited administrative operations and government decisions.",
+              "Monitored the correct execution of the plan.",
+              "Responsible for site security."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "title": "Software Engineering Program",
+            "org": "Holberton School, via Tuwaiq Academy",
+            "period": "Feb 2026 - Dec 2026 (expected)",
+            "note": ""
+          },
+          {
+            "title": "Diploma in Artificial Intelligence (final year)",
+            "org": "Gulf Institute",
+            "period": "Sep 2025 - 2026 (expected)",
+            "note": ""
+          },
+          {
+            "title": "AI Specialization 2026-2027",
+            "org": "KAUST Academy",
+            "period": "Accepted, online stage in progress",
+            "note": ""
+          },
+          {
+            "title": "Diploma in Governance",
+            "org": "King Khalid University",
+            "period": "",
+            "note": "GPA 4.51 / 5"
+          }
+        ],
+        "certs": [
+          {
+            "name": "Cisco CyberOps Associate",
+            "date": "Jun 2026"
+          },
+          {
+            "name": "Cisco Junior Cybersecurity Analyst Career Path",
+            "date": "May 2026"
+          },
+          {
+            "name": "Cisco IT Essentials",
+            "date": "Apr 2026"
+          },
+          {
+            "name": "Cisco Introduction to Cybersecurity",
+            "date": "Sep 2025"
+          }
+        ],
+        "skills": "Python, FastAPI, SQLAlchemy, PostgreSQL, REST APIs, JWT authentication, TypeScript, Next.js, Supabase, RAG (pgvector), Linux (WSL), Git, GitHub, cybersecurity fundamentals, governance and auditing"
+      }
+    },
+    {
+      "slug": "fahad",
+      "first": {
+        "ar": "فهد",
+        "en": "Fahad"
+      },
+      "last": {
+        "ar": "المدعج",
+        "en": "Almidaj"
+      },
+      "initial": {
+        "ar": "ف",
+        "en": "F"
+      },
+      "role": {
+        "ar": "مطوّر فرونت اند",
+        "en": "Frontend Developer"
+      },
+      "location": {
+        "ar": "الرياض، السعودية",
+        "en": "Riyadh, Saudi Arabia"
+      },
+      "email": "liruwais@gmail.com",
+      "phone": "+966506881139",
+      "github": "Ruwais1",
+      "linkedin": "https://www.linkedin.com/in/fahad-almidaj",
+      "cv_pdf": "cv/fahad-cv.pdf"
+    }
+  ]
+}
