@@ -14,7 +14,8 @@
     },
     "linkedin_page": "",
     "x": "",
-    "tiktok": ""
+    "tiktok": "",
+    "show_phone_email": true
   },
   "team": [
     {
@@ -129,6 +130,34 @@
         ],
         "skills": "Python, FastAPI, SQLAlchemy, PostgreSQL, REST APIs, JWT authentication, TypeScript, Next.js, Supabase, RAG (pgvector), Linux (WSL), Git, GitHub Actions, cybersecurity fundamentals, governance and auditing"
       }
+    },
+    {
+      "slug": "shatha",
+      "first": {
+        "ar": "شذى",
+        "en": "Shatha"
+      },
+      "last": {
+        "ar": "العنزي",
+        "en": "Alanazi"
+      },
+      "initial": {
+        "ar": "ش",
+        "en": "S"
+      },
+      "role": {
+        "ar": "مديرة المشروع ومطوّرة فرونت إند وUI/UX",
+        "en": "Project Manager & Front-End / UI/UX Developer"
+      },
+      "location": {
+        "ar": "الرياض، السعودية",
+        "en": "Riyadh, Saudi Arabia"
+      },
+      "email": "shathaaa1110@gmail.com",
+      "phone": "+966557887026",
+      "github": "shathaaa1110-arch",
+      "linkedin": "https://www.linkedin.com/in/shatha-alanazi-549b2a28a",
+      "cv_pdf": "cv/shatha-cv.pdf"
     },
     {
       "slug": "fahad",

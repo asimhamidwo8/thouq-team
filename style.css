@@ -3,7 +3,7 @@
   --deep:#194D3C;--green:#194D3C;--green-soft:#2B6A55;
   --paper:#F8F6EF;--card:#FFFDF8;--ink:#193A30;--muted:#5A6657;--line:#D7DDCE;--chip:#DAE5C6;
   --saffron:#DAE5C6;--saffron-dark:#C3D4A6;--on-deep:#EEF3E4;--on-deep-muted:#CFDCC0;
-  --font:"Almarai","Segoe UI",Tahoma,system-ui,sans-serif;
+  --font:"IBM Plex Sans","Segoe UI",Tahoma,system-ui,sans-serif;
   --r:12px;
 }
 body{background:var(--paper);color:var(--ink);font:400 18px/1.75 var(--font);-webkit-font-smoothing:antialiased}
